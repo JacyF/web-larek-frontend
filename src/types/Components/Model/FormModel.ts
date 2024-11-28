@@ -1,3 +1,5 @@
+
+// Managing data entered by user
 export interface IFormModel {
   payment: string;
   email: string;
