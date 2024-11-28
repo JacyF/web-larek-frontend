@@ -31,7 +31,7 @@
 
 Методы:
 
-**handleResponse(response: Response):** Promise<object> - обработчик ответа сервера.
+- handleResponse(response: Response): Promise<object> - обработчик ответа сервера.
 get(uri: string) - принимает изменяющеюся часть url-адреса, возвращает ответ от сервера.
 post(uri: string, data: object, method: ApiPostMethods = 'POST') - принимает изменяющеюся часть url-адреса, принимает данные в виде объекта для отправки на сервер, type ApiPostMethods = 'POST' | 'PUT' | 'DELETE'.
 Класс EventEmitter - брокер событий, implements от IEvents и имеет следующие методы.
