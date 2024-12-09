@@ -1,14 +1,13 @@
-
-// Displaying cart on the page
+// Importing
 export interface IBasket {
-  basket: HTMLElement;
-  title: HTMLElement;
-  basketList: HTMLElement;
-  button: HTMLButtonElement;
-  basketPrice: HTMLElement;
-  headerBasketButton: HTMLButtonElement;
-  headerBasketCounter: HTMLElement;
-  renderHeaderBasketCounter(value: number): void;
-  renderSumAllProducts(sumAll: number): void;
-  render(): HTMLElement;
+	basket: HTMLElement;
+	title: HTMLElement;
+	shoppingBasket: HTMLElement;
+	button: HTMLButtonElement;
+	basketTotalPrice: HTMLElement;
+	shoppingBasketButton: HTMLButtonElement;
+	shoppingBasketCounter: HTMLElement;
+	rendershoppingBasketCounter(value: number): void;
+	rendersumAllBasketItems(sumAll: number): void;
+	render(): HTMLElement;
 }

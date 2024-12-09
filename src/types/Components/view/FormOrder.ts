@@ -1,8 +1,7 @@
-
-// Selecting payment method and enter shipping adress
+// Order interface
 export interface IOrder {
-    formOrder: HTMLFormElement;
-    buttonAll: HTMLButtonElement[];
-    paymentSelection: String;
-    render(): HTMLElement;
+  orderForm: HTMLFormElement;
+  manageAllButton: HTMLButtonElement[];
+  paymentSelection: String;
+  render(): HTMLElement;
 }

@@ -1,8 +1,8 @@
-
-// Phone and number's User
+// Contact interface
 export interface IContacts {
-  formContacts: HTMLFormElement;
-  inputAll: HTMLInputElement[];
-  buttonSubmit: HTMLButtonElement;
-  render(): HTMLElement;
+    userContactForm: HTMLFormElement;
+    inputAll: HTMLInputElement[];
+    formSubmitButton: HTMLButtonElement;
+    formErrors: HTMLElement;
+    render(): HTMLElement;
 }

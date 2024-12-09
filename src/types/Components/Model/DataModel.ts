@@ -1,8 +1,9 @@
-import { IProduct } from "../..";
+// Importing
+import { IProductItem } from '../..';
 
-// Store data
+// Data interface
 export interface IDataModel {
-    productCards: IProduct[];
-    selectedСard: IProduct;
-    setPreview(item: IProduct): void;
+	catalogItems: IProductItem[];
+	selectedItem: IProductItem | null;
+	setPreview(item: IProductItem): void;
 }

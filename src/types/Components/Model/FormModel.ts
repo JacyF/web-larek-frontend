@@ -1,15 +1,14 @@
-
-// Managing data entered by user
+// Form interface
 export interface IFormModel {
-  payment: string;
-  email: string;
-  phone: string;
-  address: string;
-  total: number;
-  items: string[];
-  setOrderAddress(field: string, value: string): void
-  validateOrder(): boolean;
-  setOrderData(field: string, value: string): void
-  validateContacts(): boolean;
-  getOrderLot(): object;
+	payment: string;
+	email: string;
+	phone: string;
+	address: string;
+	total: number;
+	items: string[];
+	addOrderAddress(field: string, value: string): void;
+	validateOrder(): boolean;
+	setOrderInfo(field: string, value: string): void;
+	validateContactInfo(): boolean;
+	fetchOrderDetails(): Record<string, unknown>;
 }

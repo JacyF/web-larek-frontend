@@ -1,9 +1,10 @@
-import { IOrderFinalResult, IOrderLots, IProduct } from "../..";
+// Importing
+import { IOrderLot, IOrderResult, IProductItem } from "../..";
 
-// Fetching Data
+// API interface
 export interface IApiModel {
   cdnUrl: string;
-  items: IProduct[];
-  getListProductCard: () => Promise<IProduct[]>;
-  postOrderLot: (order: IOrderLots) => Promise<IOrderFinalResult>;
+  items: IProductItem[];
+  getListProductCard: () => Promise<IProductItem[]>;
+  postOrderLot: (order: IOrderLot) => Promise<IOrderResult>;
 }

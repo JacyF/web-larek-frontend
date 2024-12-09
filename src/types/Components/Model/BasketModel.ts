@@ -1,11 +1,12 @@
-import { IProduct } from "../..";
+// Importing
+import { IProductItem } from "../..";
 
-// Managing data entered by user
+// Basket interface
 export interface IBasketModel {
-  basketProducts: IProduct[];
-  getCounter: () => number;
-  getSumAllProducts: () => number;
-  setSelectedСard(data: IProduct): void;
-  deleteCardToBasket(item: IProduct): void;
-  clearBasketProducts(): void
+  basketProducts: IProductItem[];
+  getBasketCount: () => number;
+  sumAllBasketItems: () => number;
+  setSelectedCard(data: IProductItem): void;
+  deleteCardFromBasket(item: IProductItem): void;
+  clearBasketItems(): void;
 }

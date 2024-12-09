@@ -1,40 +1,47 @@
-
-// Interface for products
-export interface IProduct {
-    id: number;
-    category: string;
-    title: string;
-    image: string;
-    price: number | null;
-    description: string;
+// Products item interface
+export interface IProductItem {
+  id: string;
+  description: string;
+  image: string;
+  title: string;
+  category: string;
+  price: number | null;
 }
 
-// Interface for Form Orders
+// Actions performing interface
+export interface IActions {
+  onClick: (event: MouseEvent) => void;
+}
+
+// Order form interface
 export interface IOrderForm {
-    payment?: string;
-    address?: string;
-    email?: string;
-    phone?: string;
-    total?: string | number;
+payment?: string;
+address?: string;
+phone?: string;
+email?: string;
+total?: string | number;
 }
 
-// Interface for Lot of orders
-export interface IOrderLots {
-    payment: string;
-    email: string;
-    address: string;
-    phone: string;
-    total: number;
-    items: string[];
-}
-
-// Interface for Orders
+// Order interface
 export interface IOrder extends IOrderForm {
-    items: string[];
+  items: string[];
 }
 
-// Interface for final order
-export interface IOrderFinalResult {
-    id: string;
-    total: number;
+// Order Lot interface
+export interface IOrderLot{
+  payment: string;
+  email: string;
+  phone: string;
+  address: string;
+  total: number;
+  items: string[];
 }
+
+// Order Result interface
+export interface IOrderResult {
+  id: string;
+  total: number;
+}
+
+// Form error type
+export type FormErrors = Partial<Record<keyof IOrder, string>>;
