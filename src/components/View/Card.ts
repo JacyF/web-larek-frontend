@@ -1,9 +1,3 @@
-// Importing
-// import { IActions, IProductItem } from "../../types";
-// import { ICard } from "../../types/Components/view/Card";
-// // import { ICard } from "../../types/Components/view/Card";
-// import { IEvents } from "../base/events";
-
 import { IActions, IProductItem } from "../../types";
 import { ICard } from "../../types/Components/view/Card";
 import { IEvents } from "../base/events";

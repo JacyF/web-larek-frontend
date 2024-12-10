@@ -1,9 +1,3 @@
-// Importing
-// import { IBasket } from "../../types/Components/view/Basket";
-// import { IBasket } from "../../types/Components/view/Basket";
-// import { IBasket } from "../../types/Components/view/Basket";
-// import { IEvents } from "../base/events";
-
 import { IBasket } from "../../types/Components/view/Basket";
 import { IEvents } from "../base/events";
 

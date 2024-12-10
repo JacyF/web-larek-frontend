@@ -1,15 +1,7 @@
-// Importing
-// import { Card } from "./Card";
-// import { IActions, IProductItem } from "../../types";
-// import { IEvents } from "../base/events";
-// import { ICard } from "../../types/Components/view/CardPreview";
-// import { Card } from "./Card";
-
 import { IActions, IProductItem } from "../../types";
 import { ICard } from "../../types/Components/view/Card";
 import { IEvents } from "../base/events";
 import { Card } from "./Card";
-
 
 // Card preview item class
 export class CardPreview extends Card implements ICard {

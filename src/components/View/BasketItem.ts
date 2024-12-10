@@ -1,9 +1,3 @@
-// Importing
-// import { IActions, IProductItem } from '../../types';
-// import { IBasketItem } from '../../types/Components/view/BasketItem';
-// // import { IBasketItem } from '../../types/Components/view/BasketItem';
-// import { IEvents } from '../base/events';
-
 import { IActions, IProductItem } from "../../types";
 import { IBasketItem } from "../../types/Components/view/BasketItem";
 import { IEvents } from "../base/events";

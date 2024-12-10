@@ -1,8 +1,3 @@
-// Importing
-// import { IOrder } from "../../types/Components/view/FormOrder";
-// import { IOrder } from "../../types/Components/view/FormOrder";
-// import { IEvents } from "../base/events";
-
 import { IOrder } from "../../types/Components/view/FormOrder";
 import { IEvents } from "../base/events";
 
@@ -10,12 +5,14 @@ import { IEvents } from "../base/events";
 export class Order implements IOrder {
   orderForm: HTMLFormElement;
   manageAllButton: HTMLButtonElement[];
-  address: HTMLElement;
   buttonSubmit: HTMLButtonElement;
+  formErrors: HTMLElement;
 
   constructor(template: HTMLTemplateElement, protected events: IEvents) {
     this.orderForm = template.content.querySelector('.form').cloneNode(true) as HTMLFormElement;
-    this.manageAllButton = Array.from(this.orderForm.querySelectorAll('.button_alt')); // Finding select payment method
+    this.manageAllButton = Array.from(this.orderForm.querySelectorAll('.button_alt'));
+    this.buttonSubmit = this.orderForm.querySelector('.order__button');
+    this.formErrors = this.orderForm.querySelector('.form__errors'); 
 
     this.manageAllButton.forEach(item => {
       item.addEventListener('click', () => {
@@ -23,9 +20,6 @@ export class Order implements IOrder {
         events.emit('order:paymentSelection', item);
       });
     });
-
-    this.address = this.orderForm.querySelector('.form__input');
-    this.buttonSubmit = this.orderForm.querySelector('.order__button');
 
     this.orderForm.addEventListener('submit', (event: Event) => {
       event.preventDefault();
@@ -37,12 +31,6 @@ export class Order implements IOrder {
       const field = target.name;
       const value = target.value;
       this.events.emit(`order:changeAddress`, { field, value });
-
-      if (value) {
-        this.buttonSubmit.disabled = false;
-      } else {
-        this.buttonSubmit.disabled = true;
-      }
     });
   }
 
@@ -51,6 +39,10 @@ export class Order implements IOrder {
     this.manageAllButton.forEach(item => {
       item.classList.toggle('button_alt-active', item.name === paymentMethod);
     })
+  }
+
+  set valid(value: boolean) {
+    this.buttonSubmit.disabled = !value;
   }
 
   render() {
