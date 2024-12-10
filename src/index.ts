@@ -6,21 +6,21 @@ import { EventEmitter } from './components/base/events';
 import { ApiModel } from './components/Model/ApiModel';
 
 import { DataModel } from './components/Model/DataModel';
-import { Card } from './components/view/Card';
-import { CardPreview } from './components/view/CardPreview';
+import { Card } from './components/ViewCard/Card';
+import { CardPreview } from './components/ViewCard/CardPreview';
 
 import { IOrderForm, IProductItem } from './types';
-import { Modal } from './components/view/Modal';
+import { Modal } from './components/ViewCard/Modal';
 import { ensureElement } from './utils/utils';
 
 import { BasketModel } from './components/Model/BasketModel';
-import { Basket } from './components/view/Basket';
-import { BasketItem } from './components/view/BasketItem';
+import { Basket } from './components/ViewCard/Basket';
+import { BasketItem } from './components/ViewCard/BasketItem';
 
 import { FormModel } from './components/Model/FormModel';
-import { Order } from './components/view/FormOrder';
-import { Contacts } from './components/view/FormContacts';
-import { Success } from './components/view/Success';
+import { Order } from './components/ViewCard/FormOrder';
+import { Contacts } from './components/ViewCard/FormContacts';
+import { Success } from './components/ViewCard/Success';
 
 // Templates
 const templates = {
