@@ -1,4 +1,4 @@
-import { IBasket } from "../../types/Components/view/Basket";
+import { IBasket } from "../../types/Components/viewCard/Basket";
 import { IEvents } from "../base/events";
 
 // Basket class

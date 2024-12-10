@@ -1,4 +1,4 @@
-import { IContacts } from "../../types/Components/view/FormContacts";
+import { IContacts } from "../../types/Components/viewCard/FormContacts";
 import { IEvents } from "../base/events";
 
 // Contact class

@@ -1,5 +1,5 @@
 import { IActions, IProductItem } from "../../types";
-import { IBasketItem } from "../../types/Components/view/BasketItem";
+import { IBasketItem } from "../../types/Components/viewCard/BasketItem";
 import { IEvents } from "../base/events";
 
 // Basket of items class

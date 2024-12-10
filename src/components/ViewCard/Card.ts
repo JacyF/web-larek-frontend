@@ -1,5 +1,5 @@
 import { IActions, IProductItem } from "../../types";
-import { ICard } from "../../types/Components/view/Card";
+import { ICard } from "../../types/Components/viewCard/Cards";
 import { IEvents } from "../base/events";
 
 // Card items class

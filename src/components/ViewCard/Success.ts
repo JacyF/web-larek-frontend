@@ -1,4 +1,4 @@
-import { ISuccess } from "../../types/Components/view/Success";
+import { ISuccess } from "../../types/Components/viewCard/Success";
 import { IEvents } from "../base/events";
 
 // Success class
