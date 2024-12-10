@@ -1,7 +1,12 @@
 // Importing
-import { IActions, IProductItem } from '../../types';
-import { IBasketItem } from '../../types/Components/View/BasketItem';
-import { IEvents } from '../base/events';
+// import { IActions, IProductItem } from '../../types';
+// import { IBasketItem } from '../../types/Components/view/BasketItem';
+// // import { IBasketItem } from '../../types/Components/view/BasketItem';
+// import { IEvents } from '../base/events';
+
+import { IActions, IProductItem } from "../../types";
+import { IBasketItem } from "../../types/Components/view/BasketItem";
+import { IEvents } from "../base/events";
 
 // Basket of items class
 export class BasketItem implements IBasketItem {

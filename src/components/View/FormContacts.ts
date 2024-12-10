@@ -1,5 +1,9 @@
 // Importing
-import { IContacts } from "../../types/Components/View/FormContacts";
+// import { IContacts } from "../../types/Components/view/FormContacts";
+// import { IContacts } from "../../types/Components/view/FormContacts";
+// import { IEvents } from "../base/events";
+
+import { IContacts } from "../../types/Components/view/FormContacts";
 import { IEvents } from "../base/events";
 
 // Contact class

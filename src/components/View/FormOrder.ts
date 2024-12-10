@@ -1,5 +1,9 @@
 // Importing
-import { IOrder } from "../../types/Components/View/FormOrder";
+// import { IOrder } from "../../types/Components/view/FormOrder";
+// import { IOrder } from "../../types/Components/view/FormOrder";
+// import { IEvents } from "../base/events";
+
+import { IOrder } from "../../types/Components/view/FormOrder";
 import { IEvents } from "../base/events";
 
 // Order class

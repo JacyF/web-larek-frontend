@@ -1,5 +1,9 @@
 // Importing
-import { IModal } from "../../types/Components/View/Modal";
+// import { IModal } from "../../types/Components/view/Modal";
+// import { IModal } from "../../types/Components/view/Modal";
+// import { IEvents } from "../base/events";
+
+import { IModal } from "../../types/Components/view/Modal";
 import { IEvents } from "../base/events";
 
 // Modal windows class

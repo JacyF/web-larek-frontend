@@ -1,5 +1,9 @@
 // Importing
-import { ISuccess } from "../../types/Components/View/Success";
+// import { ISuccess } from "../../types/Components/view/Success";
+// import { ISuccess } from "../../types/Components/view/Success";
+// import { IEvents } from "../base/events";
+
+import { ISuccess } from "../../types/Components/view/Success";
 import { IEvents } from "../base/events";
 
 // Success class

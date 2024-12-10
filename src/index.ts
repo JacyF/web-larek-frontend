@@ -6,21 +6,21 @@ import { EventEmitter } from './components/base/events';
 import { ApiModel } from './components/Model/ApiModel';
 
 import { DataModel } from './components/Model/DataModel';
-import { Card } from './components/View/Card';
-import { CardPreview } from './components/View/CardPreview';
+import { Card } from './components/view/Card';
+import { CardPreview } from './components/view/CardPreview';
 
 import { IOrderForm, IProductItem } from './types';
-import { Modal } from './components/View/Modal';
+import { Modal } from './components/view/Modal';
 import { ensureElement } from './utils/utils';
 
 import { BasketModel } from './components/Model/BasketModel';
-import { Basket } from './components/View/Basket';
-import { BasketItem } from './components/View/BasketItem';
+import { Basket } from './components/view/Basket';
+import { BasketItem } from './components/view/BasketItem';
 
 import { FormModel } from './components/Model/FormModel';
-import { Order } from './components/View/FormOrder';
-import { Contacts } from './components/View/FormContacts';
-import { Success } from './components/View/Success';
+import { Order } from './components/view/FormOrder';
+import { Contacts } from './components/view/FormContacts';
+import { Success } from './components/view/Success';
 
 // Instances
 const cardCatalogTemplate = document.querySelector('#card-catalog') as HTMLTemplateElement;
