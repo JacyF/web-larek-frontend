@@ -10,5 +10,5 @@ export interface IFormModel {
 	validateOrder(): boolean;
 	setOrderInfo(field: string, value: string): void;
 	validateContactInfo(): boolean;
-	fetchOrderDetails(): Record<string, unknown>;
+	getOrderLot(): Record<string, unknown>;
 }

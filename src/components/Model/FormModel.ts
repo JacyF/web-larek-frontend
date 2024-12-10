@@ -22,7 +22,7 @@ export class FormModel implements IFormModel {
     }
 
     if (this.validateOrder()) {
-      this.events.emit('order:ready', this.fetchOrderDetails());
+      this.events.emit('order:ready', this.getOrderLot());
     }
   }
 
@@ -55,7 +55,7 @@ export class FormModel implements IFormModel {
     }
 
     if (this.validateContactInfo()) {
-      this.events.emit('order:ready', this.fetchOrderDetails());
+      this.events.emit('order:ready', this.getOrderLot());
     }
   }
 
@@ -84,7 +84,7 @@ export class FormModel implements IFormModel {
   }
 
   // Loading order data
-  fetchOrderDetails() {
+  getOrderLot() {
     return {
       payment: this.payment,
       email: this.email,

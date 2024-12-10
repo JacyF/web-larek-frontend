@@ -113,7 +113,7 @@ events.on(`contacts:changeInput`, (data: { field: string, value: string }) => {
 
 // Opening modal ' Order placed '
 events.on('success:open', () => {
-  apiModel.postOrderLot(formModel.fetchOrderDetails())
+  apiModel.postOrderLot(formModel.getOrderLot())
     .then((data) => {
       console.log(data);
       
