@@ -99,7 +99,7 @@ events.on('basket:removeItem', (item: IProductItem) => {
   renderBasketModal();
 });
 
-// Opening modal ' payment methof and details delivery
+// Opening modal ' payment method and details delivery
 events.on('order:open', () => {
   modal.viewContent = order.render();
   modal.render();
@@ -139,14 +139,20 @@ events.on('formErrors:change', (errors: Partial<IOrderForm>) => {
 });
 
 // Opening modal ' Order placed '
-events.on('success:open', () => { 
+events.on('order: process', () => { 
   apiModel.postOrderLot(formModel.getOrderLot())
     .then(() => {
       modal.viewContent = success.render(basketModel.sumAllBasketItems());
       clearBasketAndUpdate(); // Cleaning cart
       modal.render();
     })
-    .catch(console.error);
+    .catch(error => {
+      console.error(error);
+      modal.viewContent = document.createElement('div'); 
+      modal.viewContent.textContent = 'Error processing the request. Please try again later.';
+      modal.render();
+    })
+    
 });
 
 events.on('success:close', () => modal.close());

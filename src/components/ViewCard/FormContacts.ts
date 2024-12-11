@@ -32,7 +32,7 @@ export class Contacts implements IContacts {
   private setupFormSubmit(): void {
     this.userContactForm.addEventListener('submit', (event: Event) => {
       event.preventDefault();
-      this.events.emit('success:open');
+      this.events.emit('order: process');
     });
   }
 
